@@ -1,3 +1,13 @@
+var searchBtn = document.getElementById("serch-button");
+var searchBox = document.getElementById("search-box");
+
+searchBox.addEventListener("keypress", function(event) {
+    // event.preventDefault();
+    if(event.key === 'Enter')
+        searchBtn.click();
+});
+
+
 /*load meals*/
 const searchFood = () =>{
     const searchBox = document.getElementById('search-box')
